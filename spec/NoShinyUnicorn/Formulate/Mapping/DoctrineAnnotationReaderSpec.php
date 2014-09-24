@@ -31,7 +31,7 @@ class DoctrineAnnotationReaderSpec extends ObjectBehavior
     {
         return [
             'haveField' => function($subject, $field) {
-                return array_key_exists($field, $subject);
+                return array_key_exists($field, $subject) && array_key_exists('field', $subject[$field]);
             }
         ];
     }
