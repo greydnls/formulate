@@ -1,0 +1,7 @@
+---
+suites:
+  formulate_suite:
+    namespace: NoShinyUnicorn\Formulate
+    psr4_prefix: NoShinyUnicorn\Formulate
+
+formatter.name: pretty
