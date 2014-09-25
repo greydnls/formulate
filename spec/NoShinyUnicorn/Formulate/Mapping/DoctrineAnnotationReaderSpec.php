@@ -4,7 +4,6 @@ namespace spec\NoShinyUnicorn\Formulate\Mapping;
 
 use Doctrine\Common\Annotations\AnnotationReader;
 use NoShinyUnicorn\Formulate\Mapping\Fields\Field;
-use NoShinyUnicorn\Formulate\Mapping\Fields\Text;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -12,8 +11,7 @@ class DoctrineAnnotationReaderSpec extends ObjectBehavior
 {
     function let()
     {
-        $reader = new AnnotationReader;
-        $this->beConstructedWith($reader);
+        $this->beConstructedWith(new AnnotationReader);
     }
 
     function it_finds_no_annotations()
