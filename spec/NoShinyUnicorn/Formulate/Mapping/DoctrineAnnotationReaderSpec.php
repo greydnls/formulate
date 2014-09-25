@@ -20,7 +20,7 @@ class DoctrineAnnotationReaderSpec extends ObjectBehavior
         $this->read($reflection)->shouldReturn([]);
     }
 
-    function it_can_read_field_annotation()
+    function it_can_read_field_annotations()
     {
         $reflection = new \ReflectionClass('NoShinyUnicorn\Formulate\Stubs\ClassWithFieldAnnotations');
         $this->read($reflection)->shouldHaveField('fullName');
