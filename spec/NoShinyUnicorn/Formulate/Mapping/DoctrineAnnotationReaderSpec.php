@@ -3,6 +3,7 @@
 namespace spec\NoShinyUnicorn\Formulate\Mapping;
 
 use Doctrine\Common\Annotations\AnnotationReader;
+use NoShinyUnicorn\Formulate\Mapping\Fields\Field;
 use NoShinyUnicorn\Formulate\Mapping\Fields\Text;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -31,7 +32,7 @@ class DoctrineAnnotationReaderSpec extends ObjectBehavior
     {
         return [
             'haveField' => function($subject, $field) {
-                return array_key_exists($field, $subject) && array_key_exists('field', $subject[$field]);
+                return array_key_exists($field, $subject) && array_key_exists('field', $subject[$field]) && $subject[$field]['field'] instanceof Field;
             }
         ];
     }
