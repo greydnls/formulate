@@ -1,6 +1,6 @@
-<?php namespace NoShinyUnicorn\Formulate\Form\Fields;
+<?php namespace Kayladnls\Formulate\Form\Fields;
 
-use NoShinyUnicorn\Formulate\Validator\Validatable;
+use Kayladnls\Formulate\Validator\Validatable;
 
 /**
  * Created by PhpStorm.

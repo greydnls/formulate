@@ -6,7 +6,7 @@
  * Time: 11:13 PM
  */
 
-namespace NoShinyUnicorn\Formulate\Mapping\Rules;
+namespace Kayladnls\Formulate\Mapping\Rules;
 
 
 abstract class MultipleFieldsRule

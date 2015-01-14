@@ -1,5 +1,5 @@
 {
-    "name": "noshinyunicorn/formulate",
+    "name": "Kayladnls/formulate",
     "authors": [
         {
             "name": "Kayla Daniels",
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NoShinyUnicorn\\Formulate\\": "src/"
+            "Kayladnls\\Formulate\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NoShinyUnicorn\\Formulate\\Stubs\\": "spec/stubs/"
+            "Kayladnls\\Formulate\\Stubs\\": "spec/stubs/"
         }
     },
     "minimum-stability": "dev"

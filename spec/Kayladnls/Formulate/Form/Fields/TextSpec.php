@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\NoShinyUnicorn\Formulate\Form\Fields;
+namespace spec\Kayladnls\Formulate\Form\Fields;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
@@ -13,7 +13,7 @@ class TextSpec extends ObjectBehavior
     }
     function it_is_initializable()
     {
-        $this->shouldHaveType('NoShinyUnicorn\Formulate\Form\Fields\Text');
+        $this->shouldHaveType('Kayladnls\Formulate\Form\Fields\Text');
     }
 
     function it_has_a_name()

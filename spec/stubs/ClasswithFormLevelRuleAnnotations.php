@@ -1,7 +1,7 @@
-<?php namespace NoShinyUnicorn\Formulate\Stubs;
+<?php namespace Kayladnls\Formulate\Stubs;
 
-use NoShinyUnicorn\Formulate\Mapping\Form;
-use NoShinyUnicorn\Formulate\Mapping\Rules;
+use Kayladnls\Formulate\Mapping\Form;
+use Kayladnls\Formulate\Mapping\Rules;
 
 /**
  * @Form\Form

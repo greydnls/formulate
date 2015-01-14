@@ -1,4 +1,4 @@
-<?php namespace NoShinyUnicorn\Formulate\Mapping\Fields;
+<?php namespace Kayladnls\Formulate\Mapping\Fields;
 
 /**
  * @Annotation

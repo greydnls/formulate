@@ -1,7 +1,7 @@
 ---
 suites:
   formulate_suite:
-    namespace: NoShinyUnicorn\Formulate
-    psr4_prefix: NoShinyUnicorn\Formulate
+    namespace: Kayladnls\Formulate
+    psr4_prefix: Kayladnls\Formulate
 
 formatter.name: pretty

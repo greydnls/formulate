@@ -1,4 +1,4 @@
-<?php namespace NoShinyUnicorn\Formulate\Validator;
+<?php namespace Kayladnls\Formulate\Validator;
 /**
  * Created by PhpStorm.
  * User: kayladnls

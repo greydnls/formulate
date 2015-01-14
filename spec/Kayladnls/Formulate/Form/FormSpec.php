@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\NoShinyUnicorn\Formulate\Form;
+namespace spec\Kayladnls\Formulate\Form;
 
-use NoShinyUnicorn\Formulate\Form\Fields\Text;
+use Kayladnls\Formulate\Form\Fields\Text;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
@@ -12,6 +12,6 @@ class FormSpec extends ObjectBehavior
     {
         $field = new Text('some_name');
         $this->addField($field);
-        $this->getField('some_name')->shouldHaveType('NoShinyUnicorn\Formulate\Form\Fields\Text');
+        $this->getField('some_name')->shouldHaveType('Kayladnls\Formulate\Form\Fields\Text');
     }
 }

@@ -1,6 +1,6 @@
-<?php namespace NoShinyUnicorn\Formulate\Mapping\Rules;
+<?php namespace Kayladnls\Formulate\Mapping\Rules;
 
-use NoShinyUnicorn\Formulate\Mapping\Annotation;
+use Kayladnls\Formulate\Mapping\Annotation;
 
 interface Rule extends Annotation
 {

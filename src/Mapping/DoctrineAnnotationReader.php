@@ -1,10 +1,10 @@
-<?php namespace NoShinyUnicorn\Formulate\Mapping;
+<?php namespace Kayladnls\Formulate\Mapping;
 
 use Doctrine\Common\Annotations\AnnotationReader as Reader;
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use NoShinyUnicorn\Formulate\Mapping\Fields\Field;
-use NoShinyUnicorn\Formulate\Mapping\Form\Form;
-use NoShinyUnicorn\Formulate\Mapping\Rules\Rule;
+use Kayladnls\Formulate\Mapping\Fields\Field;
+use Kayladnls\Formulate\Mapping\Form\Form;
+use Kayladnls\Formulate\Mapping\Rules\Rule;
 use ReflectionClass;
 use ReflectionProperty;
 
