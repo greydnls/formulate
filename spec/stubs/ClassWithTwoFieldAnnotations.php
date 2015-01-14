@@ -7,10 +7,11 @@ use NoShinyUnicorn\Formulate\Mapping\Form;
 /**
  * @Form\Form
  */
-final class ClassWithFieldAnnotations
+final class ClassWithTwoFieldAnnotations
 {
     /**
      * @Fields\Text
+     * @Fields\Integer
      */
     private $fullName;
 } 
