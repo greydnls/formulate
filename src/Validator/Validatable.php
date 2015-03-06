@@ -1,18 +1,14 @@
 <?php namespace Kayladnls\Formulate\Validator;
-/**
- * Created by PhpStorm.
- * User: kayladnls
- * Date: 1/13/15
- * Time: 12:40 AM
- */
+
+use Kayladnls\Formulate\Validator\Rules\Rule;
 
 trait Validatable
 {
     protected $rules = array();
 
-    public function addRule($rule)
+    public function addNewRule(Rule $rule)
     {
-        $rule = new ReflectionClass($rule);
+        $rule = new \ReflectionClass($rule);
         $this->rules[$rule->getShortName()] = $rule;
     }
 

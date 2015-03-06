@@ -2,7 +2,7 @@
 
 use Kayladnls\Formulate\Mapping\AnnotationReader;
 
-class FormCreator
+class FormBuilder
 {
     private $reader;
 
@@ -18,6 +18,11 @@ class FormCreator
 
     private function createFromMap($map)
     {
-        $map = $this->reader->read($map);
+        $map = $this->reader->readFromMappable($map);
+
+        if (!isset($map['form']['fields']) || !is_array($map['form']['fields']))
+        {
+            throw new \Exception('Form has no fields');
+        }
     }
 }

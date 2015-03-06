@@ -1,6 +1,7 @@
 <?php namespace Kayladnls\Formulate\Mapping;
 
 use Doctrine\Common\Annotations\AnnotationReader as Reader;
+
 use Doctrine\Common\Annotations\AnnotationRegistry;
 use Kayladnls\Formulate\Mapping\Fields\Field;
 use Kayladnls\Formulate\Mapping\Form\Form;
@@ -22,13 +23,27 @@ class DoctrineAnnotationReader implements AnnotationReader
 
         AnnotationRegistry::registerFile(__DIR__.'/Fields/Text.php');
         AnnotationRegistry::registerFile(__DIR__.'/Fields/Integer.php');
-        AnnotationRegistry::registerFile(__DIR__.'/Rules/Required.php');
-        AnnotationRegistry::registerFile(__DIR__.'/Rules/MaxLength.php');
-        AnnotationRegistry::registerFile(__DIR__.'/Rules/AtLeastOneRequired.php');
+        AnnotationRegistry::registerFile(__DIR__.'/Rules/Field/Required.php');
+        AnnotationRegistry::registerFile(__DIR__.'/Rules/Field/MaxLength.php');
+        AnnotationRegistry::registerFile(__DIR__.'/Rules/Form/AtLeastOneRequired.php');
         AnnotationRegistry::registerFile(__DIR__.'/Form/Form.php');
     }
 
     public function read(ReflectionClass $reflection)
+    {
+        if (!$this->isAForm($reflection)) throw new \Exception('The Class you are attempting to read is not a Form');
+
+        foreach ($reflection->getProperties() as $property)
+        {
+            $this->handleProperty($property);
+        }
+
+        $this->handleClass($reflection);
+
+        return $this->annotations;
+    }
+
+    public function readFromMappable(ReflectionClass $reflection)
     {
         if (!$this->isAForm($reflection)) throw new \Exception('The Class you are attempting to read is not a Form');
 

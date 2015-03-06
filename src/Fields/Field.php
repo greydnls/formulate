@@ -1,4 +1,4 @@
-<?php namespace Kayladnls\Formulate\Form\Fields;
+<?php namespace Kayladnls\Formulate\Fields;
 /**
  * Created by PhpStorm.
  * User: kayladnls

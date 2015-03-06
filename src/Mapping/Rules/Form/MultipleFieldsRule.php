@@ -5,8 +5,8 @@
  * Date: 1/12/15
  * Time: 11:13 PM
  */
+namespace Kayladnls\Formulate\Mapping\Rules\Form;
 
-namespace Kayladnls\Formulate\Mapping\Rules;
 
 
 abstract class MultipleFieldsRule

@@ -1,4 +1,6 @@
-<?php namespace Kayladnls\Formulate\Mapping\Rules;
+<?php namespace Kayladnls\Formulate\Mapping\Rules\Form;
+
+use Kayladnls\Formulate\Mapping\Rules\Rule;
 
 /**
  * @Annotation

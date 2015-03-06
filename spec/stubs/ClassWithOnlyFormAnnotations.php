@@ -2,15 +2,11 @@
 
 use Kayladnls\Formulate\Mapping\Rules;
 use Kayladnls\Formulate\Mapping\Form;
-
+use Kayladnls\Formulate\Mapping\Sanitizers;
 /**
  * @Form\Form
  */
-final class ClassWithRuleAnnotations
+final class ClassWithOnlyFormAnnotations
 {
-    /**
-     * @Rules\Field\Required
-     * @Rules\Field\MaxLength
-     */
-    private $fullName;
+
 } 

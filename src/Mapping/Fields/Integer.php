@@ -3,7 +3,7 @@
 /**
  * @Annotation
  */
-final class Integer implements Field
+final class Integer extends AbstractField
 {
 
 }

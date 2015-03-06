@@ -1,5 +1,14 @@
-<?php namespace Kayladnls\Formulate\Mapping;
+<?php
+/**
+ * Created by PhpStorm.
+ * User: kayladnls
+ * Date: 2/18/15
+ * Time: 1:22 AM
+ */
 
-interface Annotation
-{
-} 
+namespace Kayladnls\Formulate\Mapping;
+
+
+interface Annotation {
+
+}

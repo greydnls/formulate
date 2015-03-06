@@ -1,3 +1,0 @@
-# Formulate
-
-Forms done right.

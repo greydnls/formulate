@@ -1,5 +1,6 @@
-<?php namespace Kayladnls\Formulate\Form\Fields;
+<?php namespace Kayladnls\Formulate\Fields;
 
+use Kayladnls\Formulate\Validator\Rules\Field\FieldRule;
 use Kayladnls\Formulate\Validator\Validatable;
 
 /**
@@ -13,6 +14,7 @@ use Kayladnls\Formulate\Validator\Validatable;
 abstract class AbstractField implements Field
 {
     use Validatable;
+
     protected $name;
     protected $type;
     protected $value;
@@ -20,6 +22,11 @@ abstract class AbstractField implements Field
     function __construct($name)
     {
         $this->name = $name;
+    }
+
+    public function addRule(FieldRule $rule)
+    {
+        $this->addNewRule($rule);
     }
 
     public function getName()

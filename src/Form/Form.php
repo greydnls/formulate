@@ -9,12 +9,14 @@
 namespace Kayladnls\Formulate\Form;
 
 
-use Kayladnls\Formulate\Form\Fields\Field;
+use Kayladnls\Formulate\Fields\Field;
+use Kayladnls\Formulate\Validator\Rules\Form\FormRule;
 use Kayladnls\Formulate\Validator\Validatable;
 
 class Form
 {
     use Validatable;
+
     protected $fields;
 
     public function __construct()
@@ -26,6 +28,11 @@ class Form
     public function addField(Field $field)
     {
         $this->fields[$field->getName()] = $field;
+    }
+
+    public function addRule(FormRule $rule)
+    {
+        $this->addNewRule($rule);
     }
 
     public function getField($argument1)

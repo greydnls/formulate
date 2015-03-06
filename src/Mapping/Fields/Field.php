@@ -1,7 +1,13 @@
 <?php namespace Kayladnls\Formulate\Mapping\Fields;
+/**
+ * Created by PhpStorm.
+ * User: kayladnls
+ * Date: 1/12/15
+ * Time: 11:38 PM
+ */
 
-use Kayladnls\Formulate\Mapping\Annotation;
 
-interface Field extends Annotation
+interface Field
 {
+    public function getName();
 } 

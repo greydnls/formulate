@@ -1,7 +1,16 @@
----
+formatter.name: nyan.cat
 suites:
-  formulate_suite:
-    namespace: Kayladnls\Formulate
-    psr4_prefix: Kayladnls\Formulate
+    formulateSuite:
+        namespace: Kayladnls\Formulate
+        psr4_prefix: Kayladnls\Formulate
 
-formatter.name: pretty
+code_coverage:
+  format:
+    - html
+output:
+    html: coverage
+    clover: coverage.xml
+
+extensions:
+    - PhpSpec\Extension\CodeCoverageExtension
+    - PhpSpec\NyanFormattersExtension\Extension
